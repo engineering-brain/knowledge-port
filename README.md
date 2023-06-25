@@ -25,9 +25,11 @@ python assist_speech_recog.py
 ### プログラム概要
 PC画面のアクティブなウィンドウのスクリーンショットを取得し、それから日本語の文章を抽出します。さらに、その文章をHTTPリクエストとしてナレッジ・ポートの稼働するサーバーに送信するPythonコードです。
 ### Requirement
+* selenium
 * pytesseract
 * Pillow
 * pywin32
+* Pyocr
 
 上記のライブラリを順にインストールすると、プログラムの実行に必要な他のライブラリもインストールされます。面倒な方は、requiremnets.txtで一括でインストールしてください。
 
