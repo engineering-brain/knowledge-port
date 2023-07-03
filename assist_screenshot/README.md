@@ -3,7 +3,6 @@
 PC画面のアクティブなウィンドウのスクリーンショットを取得し、それから日本語の文章を抽出します。さらに、その文章をHTTPリクエストとしてナレッジ・ポートの稼働するサーバーに送信するPythonコードです。
 ### Requirement
 * selenium
-* pytesseract
 * pywin32
 * Pyocr
 * webdriver-manager
