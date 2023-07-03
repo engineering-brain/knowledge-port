@@ -24,7 +24,6 @@
 import re
 import time
 import pyocr
-#import pytesseract
 from PIL import ImageGrab, Image
 import win32gui
 
@@ -37,8 +36,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
 uttr_max_length = 500
-#host_url = r'https://kp.engineering-brain.com/'
-host_url =r'http://localhost:8000/'
+host_url = r'https://kp.engineering-brain.com/'
 
 SET_FILE_NAME = 'setting.txt'
 exclusions = []
@@ -86,13 +84,9 @@ def is_japanese(str):
 def main_fnc():
 
     # 初期化
-    #pytesseract.pytesseract.TESSERACT_CMD = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
     pyocr.tesseract.TESSERACT_CMD = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
     tools = pyocr.get_available_tools()
     tool = tools[0]
-
-    # Tesseract OCRの設定
-    custom_config = r'--psm 6 --oem 3'  # ページセグメンテーションモード 6、OCRエンジンモード 3
 
     previous_text = ''
     MIN_STRLEN = 10
@@ -113,7 +107,6 @@ def main_fnc():
         screenshot.save('screenshot.png')
 
         # OCRによるテキストの抽出
-        #text = pytesseract.image_to_string(Image.open('screenshot.png'), lang='jpn', config=custom_config)
         text = tool.image_to_string(Image.open('screenshot.png'), lang='jpn', builder=pyocr.builders.TextBuilder(tesseract_layout=6))
 
         # 抽出したテキストを表示
