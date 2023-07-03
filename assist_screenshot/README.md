@@ -1,12 +1,9 @@
-# Knowledge-port
-モノづくりに関する発話に対して、関連するモノづくり知識をWebブラウザに表示する「ナレッジ・ポート」。この「ナレッジ・ポート」を利用するためのサンプルプログラムを共有するリポジトリです。
 ## スクリーンショット＆文章送信コード assist_screenshot.py
 ### プログラム概要
 PC画面のアクティブなウィンドウのスクリーンショットを取得し、それから日本語の文章を抽出します。さらに、その文章をHTTPリクエストとしてナレッジ・ポートの稼働するサーバーに送信するPythonコードです。
 ### Requirement
 * selenium
 * pytesseract
-* Pillow
 * pywin32
 * Pyocr
 * webdriver-manager
@@ -31,6 +28,8 @@ python assist_screenshot.py
 SSL(Secure Sockets Layer)による発話や知識の送受信を採用し、エンジニアリング・ブレインのプライバシーポリシーに沿って適切な情報管理を行っていますが、本プログラムで「ナレッジ・ポート」に送信される情報の漏洩が気になる方は、"setting.txt"に送信したくない単語や文章を記載してください。"setting.txt"に記載いただいた単語や文章を含む発話は、「ナレッジ・ポート」には送信されません。
 
 Windows環境での動作のみ確認済みです。MacやLinux環境での動作は確認しておりません。
+## License
+GNU General Public License version 3.0 and later
 ## Author
 * P. Q.
 * Engineering Brain
