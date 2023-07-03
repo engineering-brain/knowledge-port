@@ -3,48 +3,18 @@
 ## 音声認識＆文章送信コード assist_speech_recog.py
 ### プログラム概要
 マイク音声を文章として認識し、その文章をHTTPリクエストとしてナレッジ・ポートの稼働するサーバーに送信するPythonコードです。
-### Requirement
-* selenium
-* SpeechRecognition
-* webdriver-manager
+### 使い方など
+["assist_speech_recog"フォルダ](https://github.com/engineering-brain/knowledge-port/tree/development/assist_speech_recog)からpythonコード"assist_speech_recog.py"が入手できます。
 
-上記のライブラリを順にインストールすると、プログラムの実行に必要な他のライブラリもインストールされます。面倒な方は、requiremnets.txtで一括でインストールしてください。
+使用方法は"assist_speech_recog"フォルダの[README.md](https://github.com/engineering-brain/knowledge-port/tree/development/assist_speech_recog/README.md)に記載していますので、ご参照ください。
 
-```bash
-pip install -r requirements.txt
-```
-### 使い方
-"assist_speech_recog.py"を実行します。
-```bash
-python assist_speech_recog.py
-```
-ログイン画面が表示されますので、エンジニアリング・ブレインに登録したメールアドレス、パスワードを入力してください。入力するとモノづくり知識を表示するWebブラウザが現れます。
-
-続いて、マイクでモノづくりに関する発言をしてみて下さい。モノづくり（機械・電気・制御）に関する発言に対しては関連のある情報を表示し、モノづくりとは関連の無い発言をした場合、「関連のある工学ナレッジはありません」と表示されます。
 ## スクリーンショット＆文章送信コード assist_screenshot.py
 ### プログラム概要
 PC画面のアクティブなウィンドウのスクリーンショットを取得し、それから日本語の文章を抽出します。さらに、その文章をHTTPリクエストとしてナレッジ・ポートの稼働するサーバーに送信するPythonコードです。
-### Requirement
-* selenium
-* pytesseract
-* Pillow
-* pywin32
-* Pyocr
-* webdriver-manager
+### 使い方など
+["assist_screenshot"フォルダ](https://github.com/engineering-brain/knowledge-port/tree/development/assist_screenshot)からpythonコード"assist_screenshot.py"が入手できます。
 
-上記のライブラリを順にインストールすると、プログラムの実行に必要な他のライブラリもインストールされます。面倒な方は、requiremnets.txtで一括でインストールしてください。
-
-```bash
-pip install -r requirements.txt
-```
-### 使い方
-"assist_screenshot.py"を実行します。
-```bash
-python assist_screenshot.py
-```
-ログイン画面が表示されますので、エンジニアリング・ブレインに登録したメールアドレス、パスワードを入力してください。入力するとモノづくり知識を表示するWebブラウザが現れます。
-
-あとは通常に資料作成やリモート会議出席などの業務を続けるのみです。10分毎にPCのアクティブなウィンドウから文章を抽出し、その文章がモノづくり（機械・電気・制御）に関するものであればWebブラウザに関連情報が表示されます。
+使用方法は"assist_speech_recog"フォルダの[README.md](https://github.com/engineering-brain/knowledge-port/tree/development/assist_screenshot/README.md)に記載していますので、ご参照ください。
 
 ## 備考
 できるだけ広く知識を表示するアルゴリズムを採用しているため、モノづくりとは関連の無い発言に対しても、何らかのモノづくり知識が表示される場合があります。この点については、徐々に改善を図りますのでご了承ください。
