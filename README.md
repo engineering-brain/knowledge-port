@@ -1,13 +1,13 @@
 # Knowledge-port
 モノづくりに関する発話に対して、関連するモノづくり知識をWebブラウザに表示する「ナレッジ・ポート」。この「ナレッジ・ポート」を利用するためのサンプルプログラムを共有するリポジトリです。
-## 音声認識＆文章送信コード assist_speech_recog.py
+## assist_speech_recog.py  ---音声認識＆文章送信コード---
 ### プログラム概要
 マイク音声を文章として認識し、その文章をHTTPリクエストとしてナレッジ・ポートの稼働するサーバーに送信するPythonコードです。
 ### 使い方など
 ["assist_speech_recog"フォルダ](https://github.com/engineering-brain/knowledge-port/tree/main/assist_speech_recog)からpythonコード"assist_speech_recog.py"が入手できます。
 使用方法は"assist_speech_recog"フォルダの[README.md](https://github.com/engineering-brain/knowledge-port/tree/main/assist_speech_recog/README.md)に記載していますので、ご参照ください。
 
-## スクリーンショット＆文章送信コード assist_screenshot.py
+## assist_screenshot.py  ---スクリーンショット＆文章送信コード---
 ### プログラム概要
 PC画面のアクティブなウィンドウのスクリーンショットを取得し、それから日本語の文章を抽出します。さらに、その文章をHTTPリクエストとしてナレッジ・ポートの稼働するサーバーに送信するPythonコードです。
 ### 使い方など
