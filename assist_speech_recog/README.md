@@ -1,4 +1,5 @@
-## 音声認識＆文章送信コード assist_speech_recog.py
+# assist_speech_recog
+音声認識＆文章送信コード
 ### プログラム概要
 マイク音声を文章として認識し、その文章をHTTPリクエストとしてナレッジ・ポートの稼働するサーバーに送信するPythonコードです。
 ### Requirement
